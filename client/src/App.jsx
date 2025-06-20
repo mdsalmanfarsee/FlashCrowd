@@ -5,14 +5,17 @@ import {
   CivicAuthProvider,
   UserButton
 } from "@civic/auth/react";
+import Map from "./components/Map";
+
+
 
 export default function App({ children }) {
   const iframeContainerRef = useRef(null);
 
   return (
     <>
-      {/* Required container for embedded iframe */}
-      <div ref={iframeContainerRef} id="civic-iframe-container" />
+       {/* Required container for embedded iframe */}
+       <div ref={iframeContainerRef} id="civic-iframe-container" />
 
       <CivicAuthProvider
         clientId={import.meta.env.VITE_CIVIC_CLIENT_ID}
