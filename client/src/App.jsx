@@ -20,6 +20,7 @@ export default function App({ children }) {
         iframeDisplayMode="modal"
         targetContainerElement={iframeContainerRef}
       >
+        
         <UserButton />
         {children}
       </CivicAuthProvider>
