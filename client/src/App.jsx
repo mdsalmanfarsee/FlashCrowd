@@ -15,7 +15,7 @@ export default function App({ children }) {
       <div ref={iframeContainerRef} id="civic-iframe-container" />
 
       <CivicAuthProvider
-        clientId="437291ef-bb31-488c-a0ec-5bd511ff8cf6"
+        clientId={import.meta.env.VITE_CIVIC_CLIENT_ID}
         displayMode="iframe"
         iframeDisplayMode="modal"
         targetContainerElement={iframeContainerRef}
